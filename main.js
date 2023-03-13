@@ -50,15 +50,15 @@ function draw() {
           stroke(r,g,b);
           rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
          
-          if(objects[i].label == "person")
+          if(objects[i].label == " ")
           {
-            document.getElementById("number_of_objects").innerHTML = "Baby Found";
+            document.getElementById(" ").innerHTML = "Baby Found";
             console.log("stop");
             song.stop();
           }
           else
           {
-            document.getElementById("number_of_objects").innerHTML = "Baby Not Found";
+            document.getElementById(" ").innerHTML = "Baby Not Found";
             console.log("play"); 
             song.play();
           }
@@ -66,7 +66,7 @@ function draw() {
 
         if(objects.length == 0)
         {
-          document.getElementById("number_of_objects").innerHTML = "Baby Not Found";
+          document.getElementById(" ").innerHTML = "Baby Not Found";
           console.log("play"); 
           song.play();
         }
